@@ -6,3 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.56"
+rayon = "1.5.1"
+reqwest = { version = "0.11.10", features = ["json", "blocking", "rustls-tls"] }
+serde = { version = "1.0.136", features = ["derive"] }
+thiserror = "1.0.30"
+trust-dns-resolver = "0.21.2"
