@@ -25,12 +25,10 @@ jobs:
 
       - name: Lint
         run: |
-          cd tricoder
           cargo fmt -- --check
           cargo clippy -- -D warnings
 
       - name: Test
         run: |
-          cd tricoder
           cargo check
           cargo test --all
