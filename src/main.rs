@@ -16,8 +16,7 @@ enum Args {
     Modules,
 }
 
-#[tokio::main]
-async fn main() -> anyhow::Result<()> {
+fn main() -> anyhow::Result<()> {
     env::set_var("RUST_LOG", "info,trust_dns_proto=error");
     env_logger::init();
 
